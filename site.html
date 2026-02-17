@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonardo Fernandes | Cybersecurity Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000, #0f172a);
+      color: #00ff99;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      width: 200%;
+      height: 200%;
+      background: repeating-linear-gradient(
+        90deg,
+        rgba(0,255,153,0.05) 0px,
+        rgba(0,255,153,0.05) 1px,
+        transparent 1px,
+        transparent 80px
+      );
+      animation: moveBg 10s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes moveBg {
+      from { transform: translateX(0); }
+      to { transform: translateX(-200px); }
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 15px #00ff99;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #94a3b8;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #00ff99;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid #00ff99;
+      padding: 25px;
+      border-radius: 15px;
+      transition: 0.4s;
+      backdrop-filter: blur(10px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 0 20px #00ff99;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: transparent;
+      border: 2px solid #00ff99;
+      color: #00ff99;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #00ff99;
+      color: #000;
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    .gif-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .gif-container img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px #00ff99;
+      transition: 0.4s;
+    }
+
+    .gif-container img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #00ff99;
+      margin-top: 50px;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 768px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Leonardo Fernandes da Silva</h1>
+    <p>Cybersecurity Student | Python • JavaScript • HTML • CSS</p>
+    <a href="#conhecimento" class="btn">Ver Conhecimento Técnico</a>
+  </header>
+
+  <section>
+    <h2>Sobre Mim</h2>
+    <p>
+      Estudante de Cibersegurança focado em segurança ofensiva, análise de vulnerabilidades
+      e desenvolvimento seguro. Apaixonado por tecnologia e proteção de sistemas.
+    </p>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <div class="grid">
+      <div class="card">Python</div>
+      <div class="card">JavaScript</div>
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">Linux</div>
+      <div class="card">Pentest</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projeto em Destaque</h2>
+    <div class="gif-container">
+      <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="Tecnologia GIF">
+    </div>
+    <p style="margin-top:20px; text-align:center;">Projeto focado em segurança ofensiva e análise de vulnerabilidades.</p>
+  </section>
+
+  <section id="conhecimento">
+    <h2>Conhecimento Técnico Aprofundado</h2>
+    <div class="card">
+      <p><strong>Python:</strong> Desenvolvimento de scripts para automação, análise de portas, manipulação de dados e testes de segurança.</p>
+      <p><strong>JavaScript:</strong> Criação de interações dinâmicas em aplicações web e manipulação de DOM.</p>
+      <p><strong>HTML & CSS:</strong> Desenvolvimento de interfaces responsivas e estilização avançada com foco em UX.</p>
+      <p><strong>Redes & Segurança:</strong> Fundamentos de TCP/IP, portas, protocolos, enumeração, análise de vulnerabilidades e conceitos de pentest.</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: leonardo18fer@gmail.com</p>
+    <p>LinkedIn: https://www.linkedin.com/in/leonardo-f-s-577b54296/</p>
+    <p>GitHub: https://github.com/leonardo18fer-hub</p>
+  </section>
+
+  <footer>
+    © 2026 Leonardo Fernandes | Cybersecurity Portfolio
+  </footer>
+
+</body>
+</html>
